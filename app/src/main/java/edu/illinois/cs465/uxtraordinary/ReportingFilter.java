@@ -1,6 +1,8 @@
 package edu.illinois.cs465.uxtraordinary;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +21,13 @@ public class ReportingFilter extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        // Added by Stella
+        Button menuButton = findViewById(R.id.menu_button);
+        menuButton.setOnClickListener(v -> {
+            Intent intent = new Intent(ReportingFilter.this, Menu.class);
+            startActivity(intent);
         });
     }
 }
