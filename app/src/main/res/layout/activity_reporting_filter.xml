@@ -77,7 +77,7 @@
                     android:text="@string/reporting_building" />
                 <!-- Dropdown for choices; from Android docs -->
                 <Spinner
-                    android:id="@+id/reporting_dropdown"
+                    android:id="@+id/report_building_dropdown"
                     android:prompt="@string/reporting_prompt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
 
                 <!-- Choices for floors; from geeksforgeeks -->
                 <RadioGroup
-                    android:id="@+id/idRadioGroup"
+                    android:id="@+id/report_floor_choices"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -185,7 +185,7 @@
             android:background="@color/black">
 
             <Button
-                android:id="@+id/back_button"
+                android:id="@+id/back_button_report_filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/back_button"
@@ -195,7 +195,7 @@
                 android:layout_columnWeight="1"/>
 
             <Button
-                android:id="@+id/next_button"
+                android:id="@+id/next_button_report_filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/next_button"
