@@ -1,16 +1,3 @@
 <resources>
     <string name="app_name">uxtraordinary</string>
-
-    <!--/////////////////////////////-->
-    <!-- For Hannah's Reporting View -->
-    <!--/////////////////////////////-->
-
-    <!-- Reporting prompt -->
-    <string name="reporting_prompt">Report a…</string>
-    <!-- For reporting options dropdown -->
-    <string-array name="reporting_options">
-        <item>Choose an option</item>
-        <item>App</item>
-        <item>Study Space or Bathroom</item>
-    </string-array>
 </resources>

@@ -16,33 +16,14 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-            <!--
-            Commented out for testing reporting view
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
-        </activity>
-
-        <!-- Hannah's Reporting View -->
-        <activity
-            android:name=".ReportFeature"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".ReportingFilter"
-            android:exported="true">
-            <!-- For testing -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Enter Activities below -->
     </application>
 
 </manifest>
