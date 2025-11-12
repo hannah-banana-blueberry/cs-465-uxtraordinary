@@ -71,18 +71,20 @@
 
             <!-- Choices for reporting -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
                 <!-- Dropdown for choices; from Android docs -->
                 <Spinner
-                    android:id="@+id/reporting_dropdown"
+                    android:id="@+id/reporting_type_dropdown"
                     android:prompt="@string/reporting_prompt"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:spinnerMode="dropdown"
-                    android:entries="@array/reporting_options"
-                    >
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:entries="@array/reporting_options">
                 </Spinner>
             </LinearLayout>
         </LinearLayout>
@@ -101,7 +103,7 @@
             android:background="@color/black">
 
             <Button
-                android:id="@+id/back_button"
+                android:id="@+id/back_button_report_feature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/back_button"
@@ -111,7 +113,7 @@
                 android:layout_columnWeight="1"/>
 
             <Button
-                android:id="@+id/next_button"
+                android:id="@+id/next_button_report_feature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/next_button"
