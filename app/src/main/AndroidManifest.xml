@@ -11,11 +11,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Uxtraordinary">
+
+        <!-- Default provided by Android Studio -->
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Uxtraordinary">
+            android:exported="true">
+
+            <!--
+            Commented out for testing reporting view
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- Hannah's Reporting View -->
+        <activity
+            android:name=".ReportFeature"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ReportingFilter"
+            android:exported="true">
+            <!-- For testing -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
