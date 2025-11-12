@@ -45,7 +45,7 @@
         </RelativeLayout>
 
         <!-- ////////////////////////////////////// -->
-        <!-- /////////// Report Filters ///////////-->
+        <!-- /////////// Report Complete ///////////-->
         <!-- ////////////////////////////////////// -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,43 +58,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/reporting_building"
-                android:textStyle="bold"/>
-            <TextView
-                android:id="@+id/confirmation_building"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="(Building will appear here)"
-                android:layout_marginBottom="16dp"/>
-
-            <!-- Choose the floor to report -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/reporting_floor"
-                android:layout_marginTop="16dp"
-                android:textStyle="bold"/>
-            <TextView
-                android:id="@+id/confirmation_floor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="(Floor will appear here)"
-                android:layout_marginBottom="16dp"/>
-
-
-            <!-- Enter your report comments; 10/22 Lecture -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/report_comment_prompt"
-                android:layout_marginTop="16dp"
-                android:textStyle="bold"/>
-            <TextView
-                android:id="@+id/confirmation_comment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="(Comment will appear here)"
-                android:layout_marginBottom="24dp"/>
+                android:text="@string/reporting_complete"
+                android:textStyle="bold"
+                android:gravity="center"/>
         </LinearLayout>
 
         <!-- /////////////////////////////////////// -->
