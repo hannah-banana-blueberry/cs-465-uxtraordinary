@@ -86,18 +86,9 @@
             android:columnCount="2"
             android:background="@color/black">
 
-            <Button
-                android:id="@+id/back_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/back_button"
-                android:textColor="@android:color/white"
-                android:backgroundTint="@android:color/transparent"
-                android:textStyle="bold"
-                android:layout_columnWeight="1"/>
 
             <Button
-                android:id="@+id/end_button"
+                android:id="@+id/end_button_report_complete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/end_button"
