@@ -5,24 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReportingFilter">
+    tools:context=".ReportingConfirmation">
 
-
-
-    <!-- Fit screen -->
+    <!-- ////////////////////////////////////// -->
+    <!-- ///////// Top Navigation Bar /////////-->
+    <!-- ////////////////////////////////////// -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <!-- Top Navbar -->
         <RelativeLayout
             android:id="@+id/top_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="12dp"
-            android:gravity="center"
+            android:gravity="center_vertical"
             android:background="@color/black">
 
             <Button
@@ -46,100 +44,57 @@
                 android:layout_marginStart="16dp"/>
         </RelativeLayout>
 
-        <!-- Report Filters -->
+        <!-- ////////////////////////////////////// -->
+        <!-- /////////// Report Filters ///////////-->
+        <!-- ////////////////////////////////////// -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:padding="16dp"
-            android:gravity="center_horizontal">
+            android:gravity="center">
+
             <!-- Choose the building to report -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/reporting_building" />
-            <!-- Dropdown for choices; from Android docs -->
-            <Spinner
-                android:id="@+id/reporting_dropdown"
-                android:prompt="@string/reporting_prompt"
+                android:text="@string/reporting_building"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/confirmation_building"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:spinnerMode="dropdown"
-                android:entries="@array/reporting_building_options"
-                android:gravity="center">
-            </Spinner>
+                android:text="(Building will appear here)"
+                android:layout_marginBottom="16dp"/>
 
             <!-- Choose the floor to report -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/reporting_floor"
-                android:layout_marginTop="16dp"/>
-
-            <!-- Choices for floors; from geeksforgeeks -->
-            <RadioGroup
-                android:id="@+id/idRadioGroup"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/confirmation_floor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:text="(Floor will appear here)"
+                android:layout_marginBottom="16dp"/>
 
-                <RadioButton
-                    android:id="@+id/floor_basement"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/floor_basement" />
-
-                <RadioButton
-                    android:id="@+id/floor_first"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/floor_first" />
-
-                <RadioButton
-                    android:id="@+id/floor_second"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/floor_second" />
-
-                <RadioButton
-                    android:id="@+id/floor_third"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/floor_third" />
-
-                <RadioButton
-                    android:id="@+id/floor_fourth"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/floor_fourth" />
-
-                <RadioButton
-                    android:id="@+id/floor_fifth"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/floor_fifth" />
-
-                <RadioButton
-                    android:id="@+id/floor_other"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/floor_other" />
-            </RadioGroup>
 
             <!-- Enter your report comments; 10/22 Lecture -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/report_comment_prompt"
-                android:layout_marginTop="16dp"/>
-            <EditText
-                android:id="@+id/user_enter_report"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/confirmation_comment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
-                android:minLines="3"/>
+                android:text="(Comment will appear here)"
+                android:layout_marginBottom="24dp"/>
         </LinearLayout>
 
         <!-- /////////////////////////////////////// -->
@@ -176,5 +131,4 @@
                 android:layout_columnWeight="1"/>
         </GridLayout>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
