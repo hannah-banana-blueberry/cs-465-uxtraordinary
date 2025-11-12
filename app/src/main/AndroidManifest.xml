@@ -22,6 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FilterActivity"
+            android:exported="false"
+            android:label="Filter Study Spaces"
+            android:theme="@style/Theme.AppCompat.Light" />
     </application>
 
 </manifest>
