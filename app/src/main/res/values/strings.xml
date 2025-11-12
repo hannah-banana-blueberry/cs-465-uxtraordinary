@@ -16,6 +16,7 @@
     <string name="back_button">Back</string>
     <string name="next_button">Next</string>
     <string name="report_button">Report</string>
+    <string name="end_button">End</string>
 
     <!-- Reporting prompt -->
     <string name="reporting_prompt">Report a…</string>

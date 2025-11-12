@@ -97,10 +97,10 @@
                 android:layout_columnWeight="1"/>
 
             <Button
-                android:id="@+id/next_button"
+                android:id="@+id/end_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/next_button"
+                android:text="@string/end_button"
                 android:textColor="@android:color/white"
                 android:backgroundTint="@android:color/transparent"
                 android:textStyle="bold"

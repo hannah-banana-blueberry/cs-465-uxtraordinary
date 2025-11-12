@@ -128,7 +128,7 @@
             android:background="@color/black">
 
             <Button
-                android:id="@+id/back_button"
+                android:id="@+id/back_button_report_confirmation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/back_button"
@@ -138,10 +138,10 @@
                 android:layout_columnWeight="1"/>
 
             <Button
-                android:id="@+id/next_button"
+                android:id="@+id/next_button_report_confirmation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/next_button"
+                android:text="@string/report_button"
                 android:textColor="@android:color/white"
                 android:backgroundTint="@android:color/transparent"
                 android:textStyle="bold"
